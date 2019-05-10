@@ -1,10 +1,12 @@
 import React from 'react';
+import Validation from '../Validation/Validation'
 
 const inputlist = (props) => {
 
     return (
         <form>
             <div>
+                <div><Validation value={props} /></div>
                 <input id="tipo" placeholder="tipo" type="text" value={props.value.tipo} onChange={props.changed} />
                 <input id="velocidade" placeholder="velocidade" type="text" value={props.value.velocidade} onChange={props.changed} />
                 <input id="minutos" placeholder="minutos" type="text" value={props.value.minutos}  onChange={props.changed} />
